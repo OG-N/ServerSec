@@ -1146,6 +1146,7 @@ if dpkg-query --show --showformat='${db:Status-Status}
 ' 'linux-base' 2>/dev/null | grep -q ^installed; then
 
 chgrp crontab /etc/cron.allow
+sudo apt install ufw
 
 else
     >&2 echo 'Remediation is not applicable, nothing was done'
