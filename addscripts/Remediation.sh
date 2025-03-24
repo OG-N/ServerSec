@@ -1,3 +1,4 @@
+#!/bin/bash
 # Remediation is applicable only in certain platforms
 if dpkg-query --show --showformat='${db:Status-Status}
 ' 'linux-base' 2>/dev/null | grep -q ^installed; then
